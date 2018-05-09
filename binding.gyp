@@ -61,13 +61,14 @@
           'OS=="linux"',
           {
             "include_dirs": [
-              "<!(find /usr/include /usr/local/include $NODELUA_INCLUDE -name lua.h | sed s/lua.h//)"
+              "/usr/include/lua5.1/",
+              "/usr/include/luajit-2.0/"
             ],
             "library_dirs": [
               "/usr/local/lib"
             ],
             "libraries": [
-              "/usr/local/lib/libluajit-5.1.so"
+              "-lluajit-5.1",
             ],
             "actions": []
           }
