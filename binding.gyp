@@ -29,7 +29,7 @@
                   '<(module_root_dir)/build/Release/lua51.dll'
                 ],
                 'action': [
-                  'cp',
+                  'echo f || xcopy /b',
                   '<(module_root_dir)/win64luajit/lua51.dll',
                   '<(module_root_dir)/build/Release/lua51.dll'
                 ]
